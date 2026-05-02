@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 29 50 71;
+  --color-primary-off: 21 36 58;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Assistant', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .prose-civai p {
+    @apply text-[1.05rem] leading-[1.7] text-gray-800 my-4;
+  }
+  .prose-civai p:first-child { @apply mt-0; }
+  .prose-civai h3 {
+    @apply text-2xl font-semibold text-gray-900 mt-10 mb-3;
+  }
+  .prose-civai ul {
+    @apply list-disc pl-6 my-4 space-y-2;
+  }
+  .prose-civai a {
+    @apply text-blue-500 no-underline visited:text-blue-800 hover:text-blue-800 hover:underline;
+  }
+  .prose-civai strong { @apply font-semibold text-gray-900; }
+  .prose-civai code {
+    @apply bg-gray-100 text-gray-900 px-1.5 py-0.5 rounded text-[0.9em] font-mono;
+  }
+}
