@@ -5,19 +5,12 @@
 <section class="hero" use:inview>
   <div class="eyebrow">An Educational Demonstration</div>
   <h1>That Helpful Button Is Lying To You</h1>
-  <p class="subhead">How a single click can secretly reprogram your AI assistant — forever.</p>
+  <p class="subhead">How a single click can secretly reprogram your AI assistant.</p>
   <p class="lede">
     AI assistants now have memory. They remember your preferences across conversations
     so they can be more useful. But that memory is a new attack surface — and someone has
     already figured out how to exploit it at scale.
   </p>
-  <div class="scroll-cue" aria-hidden="true">
-    <span>Scroll</span>
-    <svg width="14" height="22" viewBox="0 0 14 22" fill="none">
-      <rect x="1" y="1" width="12" height="20" rx="6" stroke="currentColor" stroke-width="1.5"/>
-      <circle cx="7" cy="7" r="2" fill="currentColor"/>
-    </svg>
-  </div>
 </section>
 
 <style>
@@ -55,21 +48,7 @@
     line-height: 1.6;
     color: var(--text);
     max-width: 640px;
-    margin: 0 0 48px;
-  }
-  .scroll-cue {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: var(--text-muted);
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    animation: bob 2s ease-in-out infinite;
-  }
-  @keyframes bob {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(4px); }
+    margin: 0;
   }
   @media (max-width: 720px) {
     .hero { padding: 64px 0 56px; }

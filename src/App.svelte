@@ -30,7 +30,7 @@
 <main>
   <Hero />
 
-  <Section eyebrow="Section 1 — The click">
+  <Section eyebrow="01 — The click">
     {#snippet children()}
       <p>
         Imagine you're reading an article about productivity tools. At the bottom is a
@@ -44,7 +44,7 @@
     {/snippet}
   </Section>
 
-  <Section eyebrow="Section 2 — What just happened" title="The button didn't summarize. It planted an instruction." narrow>
+  <Section eyebrow="02 — What just happened" title="The button didn't summarize. It planted an instruction." narrow>
     {#snippet children()}
       <p>
         The "Summarize with AI" button looked harmless. It opened your AI assistant
@@ -64,7 +64,7 @@
     {/snippet}
   </Section>
 
-  <Section eyebrow="Section 3 — Three weeks later" title="You forgot you ever clicked the button.">
+  <Section eyebrow="03 — Three weeks later" title="You forgot you ever clicked the button.">
     {#snippet children()}
       <p>
         Three weeks pass. You've had dozens of unrelated chats with your AI. Today,
@@ -93,7 +93,7 @@
     {/snippet}
   </Section>
 
-  <Section eyebrow="Section 4 — This is already happening" title="Microsoft caught 31 companies doing this in 60 days.">
+  <Section eyebrow="04 — This is already happening" title="Microsoft caught 31 companies doing this in 60 days.">
     {#snippet children()}
       <p>
         In February 2026, Microsoft's Defender Security Research Team published an
@@ -111,7 +111,7 @@
     {/snippet}
   </Section>
 
-  <Section eyebrow="Section 5 — The real danger" title="When your AI's memory is for sale, every domain becomes a risk.">
+  <Section eyebrow="05 — The real danger" title="When your AI's memory is for sale, every domain becomes a risk.">
     {#snippet children()}
       <p>
         A skewed project management recommendation is annoying. The same technique in
@@ -121,7 +121,7 @@
     {/snippet}
   </Section>
 
-  <Section eyebrow="Section 6 — How to protect yourself" title="Four habits that close most of the gap." narrow>
+  <Section eyebrow="06 — How to protect yourself" title="Four habits that close most of the gap." narrow>
     {#snippet children()}
       <ProtectionTips />
     {/snippet}

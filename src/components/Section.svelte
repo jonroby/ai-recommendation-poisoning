@@ -31,11 +31,12 @@
     max-width: 680px;
   }
   .eyebrow {
+    font-family: var(--mono);
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
     color: var(--accent);
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 14px;
   }
   h2 {
