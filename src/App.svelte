@@ -24,7 +24,8 @@
 </script>
 
 <div class="banner" role="note">
-  This is an educational demonstration. No real attacks. No real companies. No data leaves your browser.
+  <span>This is an educational demonstration. No data leaves your browser.</span>
+  <a href="/civai-style/" class="banner-link">See this demo styled like CivAI →</a>
 </div>
 
 <main>
@@ -134,11 +135,21 @@
   .banner {
     background: #0f172a;
     color: #cbd5e1;
-    text-align: center;
     padding: 10px 16px;
     font-size: 12px;
     letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
   }
+  .banner-link {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .banner-link:hover { color: #fff; text-decoration: underline; }
   main {
     max-width: 880px;
     margin: 0 auto;
