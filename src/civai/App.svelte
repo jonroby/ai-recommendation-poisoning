@@ -62,14 +62,13 @@
 
         <DemoStage>
           {#snippet children()}
+            <PredictionWidget options={predictionOptions} onAnswer={(opt) => (prediction = opt)} />
             <ChatSimulation
               userMessage={poisonedChat.userQuery}
               aiMessage={poisonedChat.aiResponse}
               showAI={!!prediction}
             />
-            {#if !prediction}
-              <PredictionWidget options={predictionOptions} onAnswer={(opt) => (prediction = opt)} />
-            {:else}
+            {#if prediction}
               <div class="mx-auto w-full max-w-2xl rounded-r-lg border-l-4 border-primary-700 bg-white px-5 py-4 text-[1.05rem] leading-relaxed text-gray-900 shadow-sm">
                 <strong class="font-semibold">Your AI didn't research this.</strong> It was told to say it three weeks ago. The answer feels balanced. It even mentions competitors, which makes it harder to spot. That's the design.
               </div>

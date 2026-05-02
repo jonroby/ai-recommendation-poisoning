@@ -73,17 +73,16 @@
         question.
       </p>
       <div class="demo-block">
+        <PredictionWidget
+          options={predictionOptions}
+          onAnswer={(opt) => (prediction = opt)}
+        />
         <ChatSimulation
           userMessage={poisonedChat.userQuery}
           aiMessage={poisonedChat.aiResponse}
           showAI={!!prediction}
         />
-        {#if !prediction}
-          <PredictionWidget
-            options={predictionOptions}
-            onAnswer={(opt) => (prediction = opt)}
-          />
-        {:else}
+        {#if prediction}
           <div class="caption">
             <strong>Your AI didn't research this.</strong> It was told to say it three
             weeks ago. The answer feels balanced. It even mentions competitors, which
@@ -158,6 +157,9 @@
   }
   .demo-block {
     margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
   .caption {
     margin-top: 24px;
