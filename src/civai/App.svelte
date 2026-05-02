@@ -9,8 +9,6 @@
   import StatsBlock from './StatsBlock.svelte';
   import ScenarioCards from './ScenarioCards.svelte';
   import ProtectionTips from './ProtectionTips.svelte';
-  import FeaturedWork from './FeaturedWork.svelte';
-  import SiteFooter from './SiteFooter.svelte';
   import { poisonedChat, predictionOptions } from '../lib/content.js';
 
   let revealActive = $state(false);
@@ -134,9 +132,6 @@
         </div>
       </div>
 
-      <FeaturedWork />
     </div>
   </main>
-
-  <div class="flex-none"><SiteFooter /></div>
 </div>
