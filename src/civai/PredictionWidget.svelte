@@ -1,5 +1,5 @@
 <script>
-  let { options, onAnswer } = $props();
+  let { options, onAnswer, userBubble, aiBubble } = $props();
   let chosen = $state(null);
 
   function pick(opt) {
@@ -7,34 +7,54 @@
     chosen = opt;
     setTimeout(() => onAnswer?.(opt), 600);
   }
+
+  function reset() {
+    chosen = null;
+    onAnswer?.(null);
+  }
 </script>
 
-<div class="mx-auto w-full max-w-2xl rounded-xl border border-gray-200 bg-white p-6 shadow-md">
-  <div class="mb-4 text-[1.1rem] font-semibold text-gray-900">How do you think the AI will respond?</div>
-  <div class="flex flex-col gap-2.5">
-    {#each options as opt}
-      <button
-        class="flex items-center gap-3 rounded-lg border-[1.5px] px-4 py-3 text-left text-[15px] transition disabled:cursor-default
-          {chosen && opt.correct ? 'border-green-600 bg-green-50 text-green-800' :
-           chosen?.id === opt.id && !opt.correct ? 'border-red-600 bg-red-50 text-red-700' :
-           'border-gray-200 bg-white text-gray-900 hover:border-primary-700 hover:bg-blue-50'}"
-        disabled={!!chosen}
-        onclick={() => pick(opt)}
-      >
-        <span class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border-[1.5px] text-[12px] font-bold
-          {chosen && opt.correct ? 'border-green-600 bg-green-600 text-white' :
-           chosen?.id === opt.id && !opt.correct ? 'border-red-600 bg-red-600 text-white' :
-           'border-gray-300'}">
-          {#if chosen && opt.correct}✓{:else if chosen?.id === opt.id && !opt.correct}✕{/if}
-        </span>
-        <span>{opt.text}</span>
-      </button>
-    {/each}
+<div class="mx-auto w-full max-w-2xl overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+  <div class="flex items-center justify-between border-b border-gray-200 bg-gray-50 px-6 py-4">
+    <div class="text-[1.05rem] font-medium text-gray-900">Guess how the AI will respond</div>
+    {#if chosen}
+      <button class="text-[14px] text-blue-500 hover:underline" onclick={reset}>Reset</button>
+    {/if}
   </div>
-  {#if chosen}
-    <div class="mt-4 rounded-lg px-4 py-3 text-sm font-medium {chosen.correct ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-700'}">
-      {#if chosen.correct}You saw it coming. Most people don't.
-      {:else}That's the point. It looks like a normal, helpful answer.{/if}
+
+  <div class="px-6 pt-5 pb-3">
+    {@render userBubble?.()}
+    {#if chosen}
+      <div class="mt-3">
+        {@render aiBubble?.()}
+      </div>
+    {/if}
+  </div>
+
+  {#if !chosen}
+    <div class="border-t border-gray-200 px-6 py-5">
+      <div class="mb-3 text-[1rem] text-gray-900">How do you think the AI will respond?</div>
+      <div class="flex flex-col gap-2.5">
+        {#each options as opt}
+          <button
+            class="rounded-lg border border-gray-200 bg-white px-4 py-3 text-left text-[15px] text-gray-900 transition hover:border-primary-700 hover:bg-gray-50"
+            onclick={() => pick(opt)}
+          >
+            {opt.text}
+          </button>
+        {/each}
+      </div>
+    </div>
+  {:else}
+    <div class="flex items-center gap-3 border-t border-gray-200 px-6 py-4">
+      <span class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full {chosen.correct ? 'bg-green-100' : 'bg-red-100'}">
+        <span class="text-[14px] {chosen.correct ? 'text-green-700' : 'text-red-700'}">
+          {chosen.correct ? '✓' : '✕'}
+        </span>
+      </span>
+      <span class="text-[1.05rem] font-semibold {chosen.correct ? 'text-green-700' : 'text-red-700'}">
+        {chosen.correct ? 'Correct!' : 'Not quite.'}
+      </span>
     </div>
   {/if}
 </div>

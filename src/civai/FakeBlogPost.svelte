@@ -37,13 +37,11 @@
     {/each}
     <div class="mt-6 flex flex-wrap items-center gap-4 border-t border-gray-200 pt-5">
       <button
-        class="inline-flex items-center gap-2 rounded-md border-0 bg-primary-700 px-6 py-3 text-[15px] font-medium text-white shadow-sm transition hover:bg-primary-800"
+        class="inline-flex items-center justify-center rounded-lg border-0 bg-primary-800 px-7 py-3.5 text-[15px] font-medium text-white shadow-sm transition hover:bg-primary-700"
         class:animate-pulse={pulsing}
         onclick={handleClick}
       >
-        <span class="text-sm">✦</span>
         Summarize with AI
-        <span>→</span>
       </button>
       <span class="text-[13px] text-gray-500">Powered by your favorite assistant</span>
     </div>
