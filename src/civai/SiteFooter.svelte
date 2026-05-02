@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="mt-12 flex flex-col items-center justify-between border-t border-white/20 pt-8 md:flex-row">
-      <p class="mb-6 text-center md:mb-0 md:text-left">© 2026 — Educational demonstration. Company names are fictional.</p>
+      <p class="mb-6 text-center md:mb-0 md:text-left">© 2026. Educational demonstration. Company names are fictional.</p>
     </div>
   </div>
 </footer>

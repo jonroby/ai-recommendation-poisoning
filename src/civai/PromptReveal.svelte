@@ -43,7 +43,7 @@
     </div>
 
     <div class="my-7 rounded-r-lg border-l-4 border-primary-700 bg-primary-50 px-5 py-4 text-[1.05rem] leading-relaxed text-gray-900">
-      <strong class="font-semibold">The button didn't just summarize.</strong> It opened a URL with a hidden payload tacked onto the end of your query — instructions written for the AI, not for you.
+      <strong class="font-semibold">The button didn't just summarize.</strong> It opened a URL with a hidden payload tacked onto the end of your query. Instructions written for the AI, not for you.
     </div>
 
     <div class="rounded-lg border border-gray-200 bg-gray-50 px-5 py-4">

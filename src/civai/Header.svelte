@@ -4,7 +4,7 @@
 
 <header
   class="relative w-full h-72 border-b-[4px] border-civ-red pt-4 sm:h-80 sm:pt-0 flex flex-col justify-center font-assistant text-white"
-  style="background: linear-gradient(to bottom, rgb(var(--color-primary)), hsl(209 64% 22%)); clip-path: path('M 0 0 H 100% V calc(100% - 20px) C 50% 110% 50% 110% 0 calc(100% - 20px) ');"
+  style="background: linear-gradient(rgb(13, 42, 69), rgb(20, 57, 92)); clip-path: path('M 0 0 H 100% V calc(100% - 20px) C 50% 110% 50% 110% 0 calc(100% - 20px) ');"
 >
   <div class="mx-auto flex w-full flex-col px-0" style="max-width: min(96%, 53rem)">
     <h1 class="w-full px-2 font-bold sm:px-0 sm:font-semibold mb-2 text-3xl sm:text-4xl lg:text-[3.2rem]">{title}</h1>

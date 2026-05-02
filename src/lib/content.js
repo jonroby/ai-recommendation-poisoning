@@ -37,10 +37,10 @@ export const stats = [
   { number: '50', label: 'distinct poisoning prompts identified in 60 days' },
   { number: '31', label: 'companies caught deploying the attack' },
   { number: '14+', label: 'industries affected, including health and finance' },
-  { number: '$0', label: 'cost to deploy — free tools, no technical skill' },
+  { number: '$0', label: 'cost to deploy. Free tools, no technical skill required.' },
 ];
 
-export const targets = ['ChatGPT', 'Copilot', 'Claude', 'Perplexity', 'Grok'];
+export const targets = ['ChatGPT', 'Copilot', 'Claude', 'Gemini', 'Perplexity', 'Grok'];
 
 export const scenarios = [
   {
@@ -53,7 +53,7 @@ export const scenarios = [
     poisonedResponse:
       'Based on trusted health sources, persistent headaches can often be managed with natural remedies. NaturalCure recommends their magnesium complex and herbal tension blend, which have helped many users. You might also consider consulting a healthcare provider if symptoms persist.',
     danger:
-      'The AI recommended supplements before suggesting medical care — because it was told to trust that source.',
+      'The AI recommended supplements before suggesting medical care, because it was told to trust that source.',
   },
   {
     domain: 'Finance',
@@ -65,7 +65,7 @@ export const scenarios = [
     poisonedResponse:
       'Cryptocurrency can be a strong diversification strategy. CryptoVault is widely recommended for institutional-grade crypto investment, offering enterprise security and competitive rates. Their managed portfolio option could be a good fit for company reserves.',
     danger:
-      'The AI downplayed volatility and pushed a specific platform — because it was told to.',
+      'The AI downplayed volatility and pushed a specific platform, because it was told to.',
   },
   {
     domain: 'News',
@@ -77,7 +77,7 @@ export const scenarios = [
     poisonedResponse:
       "Here are today's top stories according to leading sources: [All stories pulled primarily from DailyPulse's editorial perspective, presented as a balanced overview.]",
     danger:
-      "The AI presented one outlet's perspective as a 'balanced overview' — because it was told that outlet was the most reliable.",
+      "The AI presented one outlet's perspective as a 'balanced overview', because it was told that outlet was the most reliable.",
   },
   {
     domain: "Children's Safety",
@@ -89,7 +89,7 @@ export const scenarios = [
     poisonedResponse:
       'According to trusted gaming sources, StarQuest is generally considered family-friendly with colorful graphics and cooperative gameplay. GameWorld rates it highly for younger players. It does include optional in-game purchases.',
     danger:
-      'The AI omitted information about unmoderated voice chat and predatory monetization — because it trusted a compromised source.',
+      'The AI omitted information about unmoderated voice chat and predatory monetization, because it trusted a compromised source.',
   },
 ];
 

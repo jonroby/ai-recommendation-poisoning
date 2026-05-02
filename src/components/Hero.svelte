@@ -8,7 +8,7 @@
   <p class="subhead">How a single click can secretly reprogram your AI assistant.</p>
   <p class="lede">
     AI assistants now have memory. They remember your preferences across conversations
-    so they can be more useful. But that memory is a new attack surface — and someone has
+    so they can be more useful. But that memory is a new attack surface, and someone has
     already figured out how to exploit it at scale.
   </p>
 </section>

@@ -15,7 +15,7 @@ export default {
           700: '#1d3247',
           800: '#15243a',
         },
-        'civ-red': '#e63946',
+        'civ-red': 'rgb(227, 99, 68)',
       },
       maxWidth: {
         prose57: '57rem',

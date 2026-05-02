@@ -7,7 +7,7 @@
     <p>
       Deploying this attack costs nothing. The tools are free. The technique takes
       minutes to set up. And once your AI's memory is poisoned, every future
-      conversation is compromised — until you manually find and delete the hidden
+      conversation is compromised, until you manually find and delete the hidden
       instruction.
     </p>
     <p class="punch">This is SEO poisoning for the AI age. And it's already here.</p>

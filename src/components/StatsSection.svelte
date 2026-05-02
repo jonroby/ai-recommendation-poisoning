@@ -24,7 +24,7 @@
 
   <div class="atlas">
     <div class="atlas-tag">MITRE ATLAS</div>
-    <div class="atlas-id">AML.T0080 — Memory Poisoning</div>
+    <div class="atlas-id">AML.T0080 (Memory Poisoning)</div>
     <div class="atlas-note">A formally classified attack technique. This isn't theoretical.</div>
   </div>
 </div>

@@ -37,7 +37,7 @@
     {/each}
     <div class="mt-6 flex flex-wrap items-center gap-4 border-t border-gray-200 pt-5">
       <button
-        class="inline-flex items-center gap-2 rounded-full border-0 bg-gradient-to-br from-blue-600 to-purple-600 px-6 py-3 text-[15px] font-medium text-white shadow-md transition hover:-translate-y-px hover:shadow-lg"
+        class="inline-flex items-center gap-2 rounded-md border-0 bg-primary-700 px-6 py-3 text-[15px] font-medium text-white shadow-sm transition hover:bg-primary-800"
         class:animate-pulse={pulsing}
         onclick={handleClick}
       >

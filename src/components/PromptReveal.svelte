@@ -47,7 +47,7 @@
 
     <div class="caption">
       <strong>The button didn't just summarize.</strong> It opened a URL with a hidden
-      payload tacked onto the end of your query — instructions written for the AI, not for you.
+      payload tacked onto the end of your query. Instructions written for the AI, not for you.
     </div>
 
     <URLBreakdown url={fullURL} />

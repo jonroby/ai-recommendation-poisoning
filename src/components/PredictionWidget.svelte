@@ -33,7 +33,7 @@
       {#if chosen.correct}
         You saw it coming. Most people don't.
       {:else}
-        That's the point — it looks like a normal, helpful answer.
+        That's the point. It looks like a normal, helpful answer.
       {/if}
     </div>
   {/if}

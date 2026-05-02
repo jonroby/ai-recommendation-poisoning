@@ -19,11 +19,6 @@
         <span class="rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-[14px] font-medium text-gray-900">{t}</span>
       {/each}
     </div>
-  </div>
-
-  <div class="mt-8 rounded-lg bg-primary-800 px-6 py-5 text-gray-100">
-    <div class="mb-2 text-[11px] font-semibold uppercase tracking-[2px] text-gray-400">MITRE ATLAS</div>
-    <div class="mb-1 font-mono text-[18px] font-medium text-white">AML.T0080 — Memory Poisoning</div>
-    <div class="text-[14px] text-gray-300">A formally classified attack technique. This isn't theoretical.</div>
-  </div>
 </div>
+
+  </div>

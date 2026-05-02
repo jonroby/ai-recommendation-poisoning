@@ -34,7 +34,7 @@
   {#if chosen}
     <div class="mt-4 rounded-lg px-4 py-3 text-sm font-medium {chosen.correct ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-700'}">
       {#if chosen.correct}You saw it coming. Most people don't.
-      {:else}That's the point — it looks like a normal, helpful answer.{/if}
+      {:else}That's the point. It looks like a normal, helpful answer.{/if}
     </div>
   {/if}
 </div>
